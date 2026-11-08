@@ -2,9 +2,9 @@
 
 Prototipo de una plataforma web lúdica de cursos para niños, desarrollado con FastAPI.
 
-- **Aprendiz:** Nombre Apellido
-- **Curso y mecánica:** (complete)
-- **Aplicación publicada:** (complete con la URL de Render)
+- **Aprendiz:** Giseella Patricia Sanchez Rico
+- **Curso y mecánica:** Geografía de Colombia / Memoria de parejas
+- **Aplicación publicada:** [https://plataforma-ludica-r0im.onrender.com](https://plataforma-ludica-r0im.onrender.com)
 
 ## Ejecutar en su equipo
 
