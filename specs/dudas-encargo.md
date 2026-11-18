@@ -1,0 +1,41 @@
+﻿# Dudas del Encargo y Supuestos - Registro de Gastos
+
+1. **¿Los valores monetarios aceptan decimales?**
+   - **Tipo:** Técnico / Funcional
+   - **Supuesto:** Sí, se manejan como tipo `float` mayor a 0.
+   - **Justificación:** Permite mayor precisión en el control financiero personal.
+
+2. **¿La descripción permite espacios al inicio o final?**
+   - **Tipo:** Validación
+   - **Supuesto:** Se valida longitud entre 1 y 80 caracteres tras limpiar espacios.
+   - **Justificación:** Evita registros vacíos o con espacios en blanco accidentales.
+
+3. **¿Las categorías distinguen mayúsculas y minúsculas?**
+   - **Tipo:** Negocio
+   - **Supuesto:** Se exigen en minúsculas exactas (`comida`, `transporte`, `estudio`, `otros`).
+   - **Justificación:** Estandariza el cálculo del resumen por categoría.
+
+4. **¿Qué ocurre si se reinicia el servidor de desarrollo?**
+   - **Tipo:** Persistencia
+   - **Supuesto:** Al ser datos en memoria, los registros se reinician.
+   - **Justificación:** Cumple con la especificación inicial antes de usar bases de datos persistentes.
+
+5. **¿El resumen muestra categorías que no tienen gastos registrados?**
+   - **Tipo:** Visualización
+   - **Supuesto:** Sí, aparecen listadas con valor `0`.
+   - **Justificación:** Mantiene la visibilidad fija de las cuatro categorías del Anexo E.
+
+6. **¿Qué pasa al intentar eliminar un ID que no existe?**
+   - **Tipo:** API / Manejo de errores
+   - **Supuesto:** El endpoint retorna código HTTP `404`.
+   - **Justificación:** Informa correctamente al cliente que el recurso no fue encontrado.
+
+7. **¿Se requiere autenticación de usuario para usar la mini-app?**
+   - **Tipo:** Seguridad
+   - **Supuesto:** No se requiere; es de acceso abierto en entorno local.
+   - **Justificación:** Es un prototipo aislado de práctica de desarrollo.
+
+8. **¿El listado de movimientos tiene un orden específico?**
+   - **Tipo:** Interfaz de usuario
+   - **Supuesto:** Se muestran en orden de creación ascendente por ID.
+   - **Justificación:** Facilita al usuario ver el histórico cronológico de sus gastos.

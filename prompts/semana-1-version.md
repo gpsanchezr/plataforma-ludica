@@ -5,7 +5,7 @@ Agregar el endpoint GET /api/version con su prueba.
 Copilot, modelo Auto.
 
 ## Prompt
-Lee AGENTS.md. Agrega el endpoint GET /api/version, que devuelva la versión definida en app/proyecto.py, con su prueba en tests/test_inicio.py. Antes de escribir código, explícame qué archivos vas a modificar y espera mi aprobación.
+Lee AGENTS.md. Agrega el endpoint GET /api/version, que devuelva la versiÃ³n definida en app/proyecto.py, con su prueba en tests/test_inicio.py. Antes de escribir cÃ³digo, explÃ­came quÃ© archivos vas a modificar y espera mi aprobaciÃ³n.
 
 ## Resultado
-El agente implementó el endpoint y la prueba asociada. Las pruebas pasan correctamente y Ruff no reporta errores.
+El agente implementÃ³ el endpoint y la prueba asociada. Las pruebas pasan correctamente y Ruff no reporta errores.
