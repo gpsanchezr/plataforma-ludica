@@ -11,8 +11,8 @@ Me comprometo a cumplir las siguientes reglas durante el desarrollo de este proy
 
 | Comandos que el agente puede ejecutar sin confirmación | Comandos que requieren mi confirmación |
 | --- | --- |
-| (complete) | (complete) |
+| `pytest -v`, `ruff check .` | `git commit`, `git push`, `pip install` |
 
-**Nombre:** (complete)
+**Nombre:** Giseella Patricia Sanchez Rico
 
-**Fecha:** (complete)
+**Fecha:** 22/11/2026
