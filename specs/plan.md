@@ -8,36 +8,36 @@ Capas: rutas, servicios, modelos y plantillas.
 
 ```mermaid
 erDiagram
-    Clase ||--o{ Nino : contiene
-    Actividad ||--o{ Pregunta : incluye
-    Nino ||--o{ Intento : realiza
-    Actividad ||--o{ Intento : registra
+    CLASE ||--o{ NINO : contiene
+    ACTIVIDAD ||--o{ PREGUNTA : incluye
+    NINO ||--o{ INTENTO : realiza
+    ACTIVIDAD ||--o{ INTENTO : registra
 
-    Clase {
+    CLASE {
         int id PK
         string nombre
         string codigo UK
     }
-    Nino {
+    NINO {
         int id PK
         string alias
         string avatar
         int clase_id FK
     }
-    Actividad {
+    ACTIVIDAD {
         int id PK
         string titulo
         string descripcion
         int orden
     }
-    Pregunta {
+    PREGUNTA {
         int id PK
         string enunciado
         JSON opciones
         string respuesta_correcta
         int actividad_id FK
     }
-    Intento {
+    INTENTO {
         int id PK
         int nino_id FK
         int actividad_id FK
